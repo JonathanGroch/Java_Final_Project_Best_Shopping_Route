@@ -9,9 +9,13 @@ body {
 }
 
 .navbar {
+	position: relative;
 	background-color: #ff0000;
 	border: none;
+	border-radius: 2px; 
 	overflow: hidden;
+	box-shadow: 0px 3px 7px rgba(180,50,50,0.7);
+	z-index: 1;
 }
 
 .navbar button {
@@ -43,10 +47,32 @@ body {
 }
 
 .tabcontent {
+	background-color: #0f0;
+	border-radius: 2px;
+	font-weight: normal;
+	font-size: 16px;
 	display: none;
-	padding: 6px 12px;
-	border: 3px solid #00ff00;
-	border-top: none;
+	box-shadow: 0px 5px 10px #922;
+	z-index: 0;
+}
+
+.maparea {
+	background-color: #ede1df;
+	text-align: center;
+	color: #222;
+	float: left;
+	border: 3px;
+	padding: 12px;
+	width: 66%;
+	border-radius: 2px;
+}
+
+.tabside {
+	background-color: #d00;
+	color: #fff;
+	border-radius: 2px;
+	padding: 12px 14px;
+	text-align: center;
 }
 
 /*Styling for all buttons*/
@@ -63,6 +89,12 @@ input[type="button"] {
 	font-weight: bold;
 	font-size: 18px;
 	color: #ff0000;
+}
+
+.tabcontent:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /*This is only in effect when the cursor is hovering over a button.*/
@@ -83,6 +115,8 @@ footer {
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
+	padding: 20px;
 	background-color: #a00;
+	font-weight: normal;
 	text-align: center;
 }
