@@ -5,6 +5,7 @@ html {
 
 body {
 	color: #fff;
+	font-family: Tahoma, sans-serif;
 	font-weight: bold;
 }
 
@@ -47,11 +48,14 @@ body {
 }
 
 .tabcontent {
-	background-color: #0f0;
-	border-radius: 2px;
+	display: none;
+	grid-template-columns: 65% 35%;
+	grid-gap: 0px;
+}
+
+.tabcontent > div {
 	font-weight: normal;
 	font-size: 16px;
-	display: none;
 	box-shadow: 0px 5px 10px #922;
 	z-index: 0;
 }
@@ -60,10 +64,8 @@ body {
 	background-color: #ede1df;
 	text-align: center;
 	color: #222;
-	float: left;
 	border: 3px;
 	padding: 12px;
-	width: 66%;
 	border-radius: 2px;
 }
 
@@ -75,30 +77,28 @@ body {
 	text-align: center;
 }
 
+.autocomplete {
+	position: relative;
+	display: inline-block;
+}
+
 /*Styling for all buttons*/
 input[type="button"] {
 	border: 0;
-	padding: 4px 8px;
+	padding: 8px;
 	border-radius: 3px;
 	box-shadow: 0 2px 3px #404040;
 	transition: 0.15s;
 	cursor: pointer;
 	outline: 0;
-	margin: 5px;
 	background-color: #fff;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 14px;
 	color: #ff0000;
 }
 
-.tabcontent:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 /*This is only in effect when the cursor is hovering over a button.*/
-input[type="button"]:hover, input[type="button"]:focus {
+input[type="button"]:hover {
     box-shadow: 0 3px 2px 2px #85040f, inset 0 0 6px 3px rgba(255,251,0,0.6);
     background-color: #ff5900;
     color: #fff;
@@ -107,7 +107,16 @@ input[type="button"]:hover, input[type="button"]:focus {
 /*When the button is being clicked.*/
 input[type="button"].active { 
     box-shadow: 0 1px 1px 1px #85040f, inset 0 0 6px 3px rgba(250,125,0,1);
-    background-color: #fa004f;
+    background-color: #0ff;
+}
+
+input[type="text"] {
+	border: 0;
+	padding: 8px;
+	border-radius: 2px;
+	color: #a00;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 footer {
