@@ -1,0 +1,93 @@
+1,1,Apple,Mejier1_Apple
+1,2,Apricot,Mejier2_Apricot
+1,3,Avocado,Mejier3_Avocado
+2,4,Asparagus,Mejier4_Asparagus
+2,5,Beet,Mejier5_Beet
+2,6,Broccoli,Mejier6_Broccoli
+3,7,Butter,Mejier7_Butter
+3,8,Cheese Shredded,Mejier8_CheeseShredded
+4,9,Bread,Mejier9_Bread
+4,10,Brownie,Mejier10_Brownie
+4,11,Cake,Mejier11_Cake
+4,12,Cookie,Mejier12_Cookie
+5,13,Beef,Mejier13_Beef
+5,14,Chicken,Mejier14_Chicken
+5,15,Fish,Mejier15_Fish
+5,16,Pork,Mejier16_Pork
+6,17,Baloney,Mejier17_Baloney
+6,18,Cheese,Mejier18_Cheese
+6,19,Ham,Mejier19_Ham
+7,20,Men's Clothes,Mejier20_MenClothes
+7,21,Women's Clothes,Mejier21_WomenClothes
+7,22,Kid's Clothes,Mejier22_KidClothes
+7,23,Toddler's Clothes,Mejier23_ToddlerClothes
+7,24,Shoes,Mejier24_Shoes
+8,25,Band-Aids,Mejier25_Band-Aids
+8,26,Bandages,Mejier26_Bandages
+8,27,Vitamins,Mejier27_Vitamins
+9,28,Video Game Consoles,Mejier28_VGConsoles
+9,29,Cameras,Mejier29_Cameras
+9,30,TVs,Mejier30_TVs
+10,31,Frozen Beef,Mejier31_FrozenBeef
+10,32,Frozen Chicken,Mejier32_FrozenChicken
+10,33,Frozen Burgers,Mejier33_FrozenBurgers
+11,34,Wine,Mejier34_Wine
+11,35,Beer,Mejier35_Beer
+11,36,Vodka,Mejier36_Vodka
+12,37,Chips,Mejier37_Chips
+12,38,Pretzel,Mejier38_Pretzel
+12,39,Popcorn,Mejier39_Popcorn
+13,40,Pudding,Mejier40_Pudding
+13,41,Custard,Mejier41_Custard
+13,42,Jello,Mejier42_Jello
+14,43,Soda,Mejier43_Soda
+14,44,Energy Drink,Mejier44_EnergyDrink
+15,45,Pepper,Mejier45_Pepper
+15,46,Salt,Mejier46_Salt
+15,47,Onion Powder,Mejier47_OnionPowder
+16,48,Chocolate,Mejier48_Chocolate
+16,49,Hard Candy,Mejier49_HardCandy
+16,50,Gum,Mejier50_Gum
+17,51,Jam,Mejier51_Jam
+17,52,Peanut Butter,Mejier52_PeanutButter
+18,53,Canned Soup,Mejier53_CannedSoup
+18,54,Canned Bean,Mejier54_CannedBean
+19,55,Pasta,Mejier55_Pasta
+19,56,Spaghetti,Mejier56_Spaghetti
+20,57,Shaving Gel,Mejier57_ShavingGel
+20,58,Soap,Mejier58_Soap
+20,59,Toothbrush,Mejier59_Toothbrush
+21,60,Lipstick,Mejier60_Lipstick
+21,61,Mascara,Mejier61_Mascara
+21,62,Eye Shadow,Mejier62_EyeShadow
+22,63,Paper Towel,Mejier63_PaperTowel
+22,64,Toilet Paper,Mejier64_ToiletPaper
+22,65,Paper Plate,Mejier65_PaperPlate
+24,66,Detergent,Mejier66_Detergent
+24,67,Fabric Softener,Mejier67_FabricSoftener
+25,68,Pet Food,Mejier68_PetFood
+25,69,Pet Toy,Mejier69_PetToy
+26,70,Kitchen Tools,Mejier70_KitchenTools
+26,71,Home Decor,Mejier71_HomeDecor
+27,72,Baseball,Mejier72_Baseball
+27,73,Fishing,Mejier73_Fishing
+28,74,Fiction,Mejier74_Fiction
+28,75,Magazine,Mejier75_Magazine
+29,76,Pencil,Mejier76_Pencil
+29,77,Eraser,Mejier77_Eraser
+29,78,Sticky Note,Mejier78_StickyNote
+30,79,Boy's Toys,Mejier79_BoyToys
+30,80,Girl's Toys,Mejier80_GirlToys
+31,81,Photo Gifts,Mejier81_PhotoGifts
+31,82,Photo Prints,Mejier82_PhotoPrints
+32,83,Facial Cream,Mejier83_FacialCream
+32,84,Lotion,Mejier84_Location
+33,85,Advil,Mejier85_Advil
+33,86,Pepto-Bismol,Mejier86_PeptoBismol
+34,87,Flowers,Mejier87_Flowers
+34,88,Fertilzer,Mejier88_Fertilzer
+35,89,Cereal,Mejier89_Cereal
+35,90,Oats,Mejier90_Oats
+36,91,Cereal Bar,Mejier91_CerealBar
+36,92,Granola Bar,Mejier92_GranolaBar
+37,93,Seasonal,Mejier93_Seasonal

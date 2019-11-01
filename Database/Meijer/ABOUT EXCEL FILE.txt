@@ -1,0 +1,1 @@
+There is two kind: xlsx and csv. Use the csv version to load into the MySQL database with the wizard. :)
