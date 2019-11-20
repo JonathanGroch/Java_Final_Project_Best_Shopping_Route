@@ -8,6 +8,17 @@ var targetItems = ["example", "meat", "children"];
 var menardsItems = ["plywood", "dark matter", "garbage"];
 var meijerItems = ["poop", "blueberries", "landfills"];
 
+
+
+
+function addInput(divName){
+
+          var newdiv = document.createElement('div');
+          newdiv.innerHTML = "Item:" + "<input type='text' name='myInputs[]'>";
+          document.getElementById(divName).appendChild(newdiv);
+          counter++;
+     }
+
 //changes page content when nav tabs are clicked
 function openStore(evt, storeName) {
 	var i, tabcontent, navtab;

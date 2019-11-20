@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>let's go SHOPPING hahaa</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+
+		<!--Navigation bar-->
+		<div class="navbar">
+			<button class="navtab" onclick="openStore(event, 'Home')" id="defaultOpen">HOME</button>
+			<button class="navtab" onclick="openStore(event, 'Target')">TARGET</button>
+			<button class="navtab" onclick="openStore(event, 'Meijer')">MEIJER</button>
+			<button class="navtab" onclick="openStore(event, 'Menards')">MENARDS</button>
+		</div>
+
+		<!--Content associated with each button is contained here-->
+		<div id="Home" class="tabcontent" style="display: grid">
+			<div class="maparea">
+				aaa
+			</div>
+			<!--Content displayed to the side of the map-->
+			<div class="tabside">
+				test info
+				<!--Form-->
+				<form autocomplete="off">
+					items </br>
+					<div class="autocomplete">
+						<input type="text" id="searchForm" name="itemList" placeholder="Start typing...">
+					</div>
+					<input type="button" value="Select">
+				</form>
+
+			</div>
+		</div>
+
+		<div id="Target" class="tabcontent">
+			<div class="maparea">
+				map area
+			</div>
+			<div class="tabside">
+				tab side
+			</div>
+		</div>
+
+		<div id="Meijer" class="tabcontent">
+			<div class="maparea">
+				another test
+			</div>
+			<div class="tabside">
+				fffff
+			</div>
+		</div>
+
+		<div id="Menards" class="tabcontent">
+			<div class="maparea">
+				poop scoop
+			</div>
+			<div class="tabside">
+				reeee
+			</div>
+		</div>
+
+	</body>
+	<footer>
+		this is a test
+	</footer>
+</html>

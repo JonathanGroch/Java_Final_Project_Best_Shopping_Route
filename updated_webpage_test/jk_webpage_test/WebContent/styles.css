@@ -82,6 +82,12 @@ body {
 	display: inline-block;
 }
 
+.extrafeature {
+	display: none;
+	grid-template-columns: 65% 35%;
+	grid-gap: 0px;
+}
+
 /*Styling for all buttons*/
 input[type="button"] {
 	border: 0;

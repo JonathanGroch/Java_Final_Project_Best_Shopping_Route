@@ -19,7 +19,12 @@
 		<!--Content associated with each button is contained here-->
 		<div id="Home" class="tabcontent" style="display: grid">
 			<div class="maparea">
-				aaa
+				<h1> Shopping Simulator 900</h1>
+				<h5> Select your desired store and enter desired items on form </h5>
+				<img src="http://www.naturalconcreteproducts.com/wp-content/uploads/2019/02/menards-logo-vector.png" width="150" height="33"></i></a></li>
+  				<img src='https://i.postimg.cc/7fnrGrCq/target.png' border='0'width="150" height="33" alt='target'/></a></li>
+				<img src='https://i.postimg.cc/4Y1VnPRY/costco.png' border='0' width="150" height="33" alt='costco'/></a></i></a></li>
+
 			</div>
 			<!--Content displayed to the side of the map-->
 			<div class="tabside">
@@ -38,33 +43,79 @@
 
 		<div id="Target" class="tabcontent">
 			<div class="maparea">
-				map area
+				<a href = "https://www.target.com"><img src ="https://i.postimg.cc/255f8bZ9/targetmap.png" width="600" height="500"></a>
+				<br>
 			</div>
+			
 			<div class="tabside">
-				tab side
+				<h1> Enter Items Here </h1>
+				<!-----form------>
+				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
+				<form method="POST">
+    				<div id="dynamicInput">
+          			Item:<input type="text" name="myInputs[]">
+     				</div>
+     				<br>
+    				<input type="button" value="Add Item" onClick="addInput('dynamicInput');">
+    				<br>
+    				<input type = "submit" value = "Submit" />
+				</form>
+		
 			</div>
 		</div>
 
 		<div id="Meijer" class="tabcontent">
 			<div class="maparea">
-				another test
+				<a href = "https://www.meijer.com"><img src ="https://github.com/JonathanGroch/Java_Final_Project_Best_Shopping_Route/blob/master/Meijers_Map.jpg?raw=true" width="600" height="500"></a>
 			</div>
+
 			<div class="tabside">
-				fffff
+				<h1> Enter Items Here </h1>
+				<!-----form------>
+				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
+				<form method="POST">
+    				<div id="dynamicInput2">
+          			Item:<input type="text" name="myInputs[]">
+     				</div>
+     				<br>
+    				<input type="button" value="Add Item" onClick="addInput('dynamicInput2');">
+    				<br>
+    				<input type = "submit" value = "Submit" />
+				</form>
+		
 			</div>
 		</div>
 
+
 		<div id="Menards" class="tabcontent">
 			<div class="maparea">
-				poop scoop
+				<a href = "https://www.menards.com"><img src ="https://hw.menardc.com/main/assets/images5/maps/master/3323-1.png" width="600" height="500"></a>
+			</div>
+
+			<div class ="extrafeature">
+				<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=41.8781&amp;lon=87.6298&amp;name=Chicago&amp;color=red"> </iframe>
 			</div>
 			<div class="tabside">
-				reeee
+				<h1> Enter Items Here </h1>
+				<!-----form------>
+				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
+				<form method="POST">
+    				<div id="dynamicInput3">
+          			Item:<input type="text" name="myInputs[]">
+     				</div>
+     				<br>
+    				<input type="button" value="Add Item" onClick="addInput('dynamicInput3');">
+    				<br>
+    				<input type = "submit" value = "Submit" />
+				</form>
+		
 			</div>
 		</div>
 
 	</body>
+
 	<footer>
-		this is a test
+
+
 	</footer>
 </html>
