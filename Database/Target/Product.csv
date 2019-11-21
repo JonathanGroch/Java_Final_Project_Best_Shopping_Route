@@ -1,0 +1,85 @@
+categoryID,prodcutID,productName,waypoint
+86,192,Necklace,Target1_Necklace
+86,193,Earring,Target2_Earring
+86,194,Braclet,Target3_Braclet
+87,195,Bag,Target4_Bag
+87,196,Handbag,Target5_Handbag
+87,197,Belt,Target6_Belt
+88,198,Mens Clothing,Target7_MensClothing
+88,199,Womens Clothing,Target8_WomensClothing
+88,200,Shoe,Target9_Shoe
+89,201,Suitcase,Target10_Suitcase
+89,202,Duffel Bag,Target11_Duffel Bag
+89,203,Toilerty Bag,Target12_ToilertyBag
+90,204,Diaper,Target13_Diaper
+90,205,Baby Food,Target14_BabyFood
+90,206,Baby Formula,Target15_BabyFormula
+91,207,Book,Target16_Book
+91,208,Movie,Target17_Movie
+91,209,Music,Target18_Music
+92,210,Video Game,Target19_VideoGame
+92,211,Computer,Target20_Computer
+92,212,Phone,Target21_Phone
+93,213,Christmas Tree,Target22_ChristmasTree
+93,214,Christmas Tree Decoration,Target23_ChristmasTreeDecoration
+93,215,Christmas Light,Target24_ChristmasLight
+94,216,Floor Mat,Target25_FloorMat
+94,217,Interior Cleaner,Target26_InteriorCleaner
+94,218,Steering Wheel Cover,Target27_SteeringWheelCover
+95,219,Weight,Target28_Weight
+95,220,Ball,Target29_Ball
+95,221,Bike,Target30_Bike
+96,222,Boy Toy,Target31_BoyToy
+96,223,Girl Toy,Target32_GirlToy
+96,224,Boardgame,Target33_Boardgame
+97,225,Picture Frame,Target34_PictureFrame
+97,226,Google Nest Hub,Target35_GoogleNestHub
+97,227,Picture Frame Wall,Target36_PictureFrameWall 
+98,228,Drawer,Target37_Drawer
+98,229,Desk,Target38_Desk
+98,230,Chair,Target39_Chair
+99,231,Bed,Target40_Bed
+99,232,Pillow,Target41_Pillow
+99,233,Blanket,Target42_Blanket
+100,234,Bath Rug,Target43_BathRug
+100,235,Towel,Target44_Towel
+100,236,Shower Curtain,Target45_ShowerCurtain
+101,237,Light Bulb,Target46_LightBulb
+101,238,Paint,Target47_Paint
+101,239,Lamp,Target48_Lamp
+102,240,Storage Box,Target49_StorageBox 
+102,241,Cube Storage,Target50_CubeStorage
+102,242,Storage Drawer,Target51_StorageDrawer
+103,243,Plastic Fork,Target52_PlasticFork
+103,244,Dinner Plate,Target53_DinnerPlate
+103,245,Plastic Spoon,Target54_PlasticSpoon
+104,246,Knife,Target55_Knife
+104,247,Kitchen Storage Rack,Target56_KitchenStorageRack
+104,248,Speed Hand Mixer,Target57_SpeedHandMixer
+105,249,Toaster Oven,Target58_Toaster Oven
+105,250,Microwave,Target59_Microwave
+105,251,Kitchen Blender,Target60_KitchenBlender
+106,252,Pencil,Target61_Pencil
+106,253,Notebook,Target62_Notebook
+106,254,Binder,Target63_Binder
+107,255,Medicine,Target64_Medicine
+107,256,Bandage,Target65_Bandage 
+107,257,Vitamin,Target66_Vitamin
+108,258,Birthday Card,Target67_BirthdayCard
+108,259,Halloween Card,Target68_HalloweenCard
+108,260,Baby Shower Card,Target69_BabyShowerCard
+109,261,Tooth Paste,Target70_Tooth Paste
+109,262,Tooth Brush,Target71_Tooth Brush
+109,263,Mouth Wash,Target72_Mouth Wash
+110,264,Mascara,Target73_Mascara
+110,265,Foundation,Target74_Foundation
+110,266,Hair Spray,Target75_HairSpray
+111,267,Pet Food,Target76_PetFood
+111,268,Pet Toy,Target77_PetToy
+111,269,Pet Bed,Target78_PetBed
+112,270,Disinfecting Wipe,Target79_DisinfectingWipe
+112,271,Liquid Dish Soap,Target80_LiquidDishSoap
+112,272,Disingecting Spray,Target81_DisingectingSpray
+113,273,Apple,Target82_Apple
+113,274,Orange,Target83_Orange
+113,275,Banana,Target84_Banana

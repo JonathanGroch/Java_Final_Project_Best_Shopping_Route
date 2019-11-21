@@ -15,23 +15,23 @@ create table Store(
 );
 create table Category(
 	storeID int unsigned,
-    categoryID int unsigned auto_increment,
-    categoryName varchar(20) unique not null,
+    categoryID int unsigned unique auto_increment,
+    categoryName varchar(25) not null,
     foreign key(storeID) references Store(storeID),
     primary key(categoryID)
 );
 create table Location( # Waypoint is in format name of store, number, then underscore and product name . EX: 'Meijer1_Apples' For Meijer waypoint 1.
-	waypoint varchar(25) not null,
+	waypoint varchar(40) not null,
     x float(2) not null, #Coordinates assume bottom-left corner of store map is (0,0);
     y float(2) not null,
     primary key(waypoint)
 );
 
 create table Product(
-	categoryID int unsigned,
-    productID int unsigned auto_increment,
-    productName varchar(20) unique not null,
-    waypoint varchar(25) not null,
+	categoryID int unsigned auto_increment,
+    productID int unsigned,
+    productName varchar(25) not null,
+    waypoint varchar(40) not null,
     foreign key(categoryID) references Category(categoryID),
     foreign key(waypoint) references Location(waypoint),
     primary key(productID)

@@ -1,0 +1,87 @@
+waypoint,x,y
+Target1_Necklace,14.2,4
+Target2_Earring,14.1,4
+Target3_Braclet,14.3,4
+Target4_Bag,15.6,4
+Target5_Handbag,15.4,4
+Target6_Belt,15.2,4
+Target7_MensClothing,14.5,8.8
+Target8_WomensClothing,16.4,7.9
+Target9_Shoe,15,8.1
+Target10_Suitcase,13.5,8
+Target11_Duffel Bag,13.5,7.5
+Target12_ToilertyBag,13.5,7.2
+Target13_Diaper,13.3,8
+Target14_BabyFood,12.9,8
+Target15_BabyFormula,12.5,8
+Target16_Book,11.5,9
+Target17_Movie,10.8,9
+Target18_Music,10,9
+Target19_VideoGame,7.2,9
+Target20_Computer,5.4,9
+Target21_Phone,7.5,8.7
+Target22_ChristmasTree,3.5,9
+Target23_ChristmasTreeDecoration,4,9
+Target24_ChristmasLight,4.5,9
+Target25_FloorMat,3.5,8
+Target26_InteriorCleaner,3.9,8
+Target27_SteeringWheelCover,4.2,8
+Target28_Weight,4.6,8
+Target29_Ball,5,8
+Target30_Bike,3.5,7.3
+Target31_BoyToy,7.5,8
+Target32_GirlToy,9.4,8
+Target33_Boardgame,8.5,7.3
+Target34_PictureFrame,4.2,6.5
+Target35_GoogleNestHub,5,6.5
+Target36_PictureFrameWall ,5.3,6.5
+Target37_Drawer,6,6.5
+Target38_Desk,6.8,6.5
+Target39_Chair,7,6.5
+Target40_Bed,7.9,6.5
+Target41_Pillow,8.5,6.5
+Target42_Blanket,9,6.5
+Target43_BathRug,9,5.5
+Target44_Towel,8.5,5.5
+Target45_ShowerCurtain,8,5.5
+Target46_LightBulb,6.5,5.5
+Target47_Paint,6,5.5
+Target48_Lamp,5.5,5.5
+Target49_StorageBox ,4.5,5.5
+Target50_CubeStorage,4,5.5
+Target51_StorageDrawer,3.5,5.5
+Target52_PlasticFork,3.5,4
+Target53_DinnerPlate,4,4
+Target54_PlasticSpoon,3.2,4
+Target55_Knife,5,4
+Target56_KitchenStorageRack,5.5,4
+Target57_SpeedHandMixer,5.7,4
+Target58_Toaster Oven,6,4
+Target59_Microwave,6.2,4
+Target60_KitchenBlender,6.6,4
+Target61_Pencil,7.5,4
+Target62_Notebook,8,4
+Target63_Binder,8.2,4
+Target64_Medicine,4.9,2.3
+Target65_Bandage ,4,2.3
+Target66_Vitamin,4.5,2.3
+Target67_BirthdayCard,9.5,4
+Target68_HalloweenCard,9.8,4
+Target69_BabyShowerCard,9.3,4
+Target70_Tooth Paste,5,3
+Target71_Tooth Brush,5,2.6
+Target72_Mouth Wash,5,2.7
+Target73_Mascara,6.9,3
+Target74_Foundation,7.1,3
+Target75_HairSpray,7.5,3
+Target76_PetFood,10,3
+Target77_PetToy,9.3,3
+Target78_PetBed,9,3
+Target79_DisinfectingWipe,10.4,3
+Target80_LiquidDishSoap,11,3
+Target81_DisingectingSpray,10.2,3
+Target82_Apple,2.5,3.5
+Target83_Orange,2.7,3.5
+Target84_Banana,2.5,3.2
+Target85_Entrance,14.2,1.4
+Target86_CashRegister,13,3.2

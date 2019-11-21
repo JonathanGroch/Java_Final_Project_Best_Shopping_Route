@@ -17,24 +17,24 @@
 6,17,Baloney,Mejier17_Baloney
 6,18,Cheese,Mejier18_Cheese
 6,19,Ham,Mejier19_Ham
-7,20,Men's Clothes,Mejier20_MenClothes
-7,21,Women's Clothes,Mejier21_WomenClothes
-7,22,Kid's Clothes,Mejier22_KidClothes
-7,23,Toddler's Clothes,Mejier23_ToddlerClothes
-7,24,Shoes,Mejier24_Shoes
-8,25,Band-Aids,Mejier25_Band-Aids
-8,26,Bandages,Mejier26_Bandages
-8,27,Vitamins,Mejier27_Vitamins
-9,28,Video Game Consoles,Mejier28_VGConsoles
-9,29,Cameras,Mejier29_Cameras
-9,30,TVs,Mejier30_TVs
+7,20,Men's Clothe,Mejier20_MenClothe
+7,21,Women's Clothe,Mejier21_WomenClothe
+7,22,Kid's Clothe,Mejier22_KidClothe
+7,23,Toddler's Clothe,Mejier23_ToddlerClothe
+7,24,Shoe,Mejier24_Shoe
+8,25,Band-Aid,Mejier25_Band-Aid
+8,26,Bandage,Mejier26_Bandage
+8,27,Vitamin,Mejier27_Vitamin
+9,28,Video Game Console,Mejier28_VGConsole
+9,29,Camera,Mejier29_Camera
+9,30,TV,Mejier30_TV
 10,31,Frozen Beef,Mejier31_FrozenBeef
 10,32,Frozen Chicken,Mejier32_FrozenChicken
-10,33,Frozen Burgers,Mejier33_FrozenBurgers
+10,33,Frozen Burger,Mejier33_FrozenBurger
 11,34,Wine,Mejier34_Wine
 11,35,Beer,Mejier35_Beer
 11,36,Vodka,Mejier36_Vodka
-12,37,Chips,Mejier37_Chips
+12,37,Chip,Mejier37_Chip
 12,38,Pretzel,Mejier38_Pretzel
 12,39,Popcorn,Mejier39_Popcorn
 13,40,Pudding,Mejier40_Pudding
@@ -67,7 +67,7 @@
 24,67,Fabric Softener,Mejier67_FabricSoftener
 25,68,Pet Food,Mejier68_PetFood
 25,69,Pet Toy,Mejier69_PetToy
-26,70,Kitchen Tools,Mejier70_KitchenTools
+26,70,Kitchen Tool,Mejier70_KitchenTools
 26,71,Home Decor,Mejier71_HomeDecor
 27,72,Baseball,Mejier72_Baseball
 27,73,Fishing,Mejier73_Fishing
@@ -76,18 +76,18 @@
 29,76,Pencil,Mejier76_Pencil
 29,77,Eraser,Mejier77_Eraser
 29,78,Sticky Note,Mejier78_StickyNote
-30,79,Boy's Toys,Mejier79_BoyToys
-30,80,Girl's Toys,Mejier80_GirlToys
-31,81,Photo Gifts,Mejier81_PhotoGifts
-31,82,Photo Prints,Mejier82_PhotoPrints
+30,79,Boy's Toy,Mejier79_BoyToy
+30,80,Girl's Toy,Mejier80_GirlToy
+31,81,Photo Gift,Mejier81_PhotoGift
+31,82,Photo Print,Mejier82_PhotoPrint
 32,83,Facial Cream,Mejier83_FacialCream
-32,84,Lotion,Mejier84_Location
+32,84,Lotion,Mejier84_Lotion
 33,85,Advil,Mejier85_Advil
 33,86,Pepto-Bismol,Mejier86_PeptoBismol
-34,87,Flowers,Mejier87_Flowers
+34,87,Flower,Mejier87_Flower
 34,88,Fertilzer,Mejier88_Fertilzer
 35,89,Cereal,Mejier89_Cereal
-35,90,Oats,Mejier90_Oats
+35,90,Oat,Mejier90_Oat
 36,91,Cereal Bar,Mejier91_CerealBar
 36,92,Granola Bar,Mejier92_GranolaBar
 37,93,Seasonal,Mejier93_Seasonal
