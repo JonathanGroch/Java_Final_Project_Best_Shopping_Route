@@ -32,6 +32,7 @@ public class results extends HttpServlet {
 		PrintWriter out = response.getWriter();
 	      
 	      
+		// ??????WHAT DOES THIS DO
 	    Enumeration<String> paramNames = request.getParameterNames();
 
 	    while(paramNames.hasMoreElements()) {
@@ -53,6 +54,8 @@ public class results extends HttpServlet {
 	            out.println("</ul>");
 	        }
 	    }
+	    // ???????? WHAT IS THIS
+	    // ???????? CURRENTLY NOT RETURNING CORRECT STUFF
 	    out.println("</tr>\n</table>\n</body></html>");
 	}
 	
