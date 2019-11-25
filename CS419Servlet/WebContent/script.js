@@ -1,6 +1,6 @@
 //openStore code adapted from w3 Schools
 // https://www.w3schools.com/howto/howto_js_tabs.asp
-r
+
 var getBtn = document.getElementById('myBtn');
 
 getBtn.onclick = function() {
