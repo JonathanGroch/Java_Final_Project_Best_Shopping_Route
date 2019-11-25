@@ -1,14 +1,8 @@
 //openStore code adapted from w3 Schools
 // https://www.w3schools.com/howto/howto_js_tabs.asp
-//autocomplete code adapted from w3 Schools
-// https://www.w3schools.com/howto/howto_js_autocomplete.asp
-
-//this array will be populated with a query to the database later
-var targetItems = ["example", "meat", "children"];
-var menardsItems = ["plywood", "dark matter", "garbage"];
-var meijerItems = ["poop", "blueberries", "landfills"];
-
+r
 var getBtn = document.getElementById('myBtn');
+
 getBtn.onclick = function() {
     getTheData() ;
 }
@@ -35,13 +29,12 @@ function getTheData() {
 
 }
 
-function addInput(divName){
-
-          var newdiv = document.createElement('div');
-          newdiv.innerHTML = "Item:" + "<input type='text' name='myInputs[]'>";
-          document.getElementById(divName).appendChild(newdiv);
-          counter++;
-     }
+function addInput(divName) {
+	var newdiv = document.createElement('div');
+	newdiv.innerHTML = "Item:" + "<input type='text' name='myInputs[]'>";
+	document.getElementById(divName).appendChild(newdiv);
+	counter++;
+}
 
 //changes page content when nav tabs are clicked
 function openStore(evt, storeName) {
@@ -62,9 +55,3 @@ function openStore(evt, storeName) {
 }
 
 document.getElementById("defaultOpen").click();
-
-//autocomplete form code??
-//maybe don'+ do +his
-function autocomplete(input, array) {
-
-}

@@ -2,14 +2,14 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
-<style type="text/css"> 
-<%@include file = "css/styles.css" %></style>
-<script src="js/script.js"></script>
-<meta charset="ISO-8859-1">
-<title>Store</title>
-</head>
-<body>
+	<head>
+		<style type="text/css"> 
+		<%@include file = "css/styles.css" %></style>
+		<script src="js/script.js"></script>
+		<meta charset="ISO-8859-1">
+		<title>Store</title>
+	</head>
+	<body>
 		<!--Navigation bar-->
 		<div class="navbar">
 			<button class="navtab" onclick="openStore(event, 'Home')" id="defaultOpen">HOME</button>
@@ -106,11 +106,9 @@
     				<input type="button" value="Add Item" onClick="addInput('dynamicInput3');">
     				<br>
     				<input type = "submit" value = "Submit" />
-				</form>
-		
+				</form>	
 			</div>
+			
 		</div>
-		
-
-</body>
+	</body>
 </html>

@@ -104,14 +104,14 @@ input[type="button"] {
 }
 
 /*This is only in effect when the cursor is hovering over a button.*/
-input[type="button"]:hover {
+input[type="button"]:hover, input[type="submit"]:hover {
     box-shadow: 0 3px 2px 2px #85040f, inset 0 0 6px 3px rgba(255,251,0,0.6);
     background-color: #ff5900;
     color: #fff;
 }
 
 /*When the button is being clicked.*/
-input[type="button"].active { 
+input[type="button"].active, input[type="submit"].active { 
     box-shadow: 0 1px 1px 1px #85040f, inset 0 0 6px 3px rgba(250,125,0,1);
     background-color: #0ff;
 }
