@@ -37,10 +37,11 @@ public class DirectionsStore {
 	//Calls the database to get categories
 	public void categories() {
 		try {
-			String myDriver = "org.gjt.mm.mysql.Driver";
-			String myUrl = "jdbc:mysql://localhost/StoreNavigator?useSSL=false";
-			Class.forName(myDriver);
-			Connection conn = DriverManager.getConnection(myUrl, "root", "sesame");
+			Connection conn = BT_Package.JDBCConnect.getConnection();
+			//String myDriver = "org.gjt.mm.mysql.Driver";
+			//String myUrl = "jdbc:mysql://localhost/StoreNavigator?useSSL=false";
+			//Class.forName(myDriver);
+			//Connection conn = DriverManager.getConnection(myUrl, "root", "sesame");
 			Statement stmt = conn.createStatement();
 			String query = "SELECT Categories.categoryName FROM Categories INNER JOIN Products ON Products.categoryId = Categories.categoryId WHERE Products.productName = ";
 			for(int i = 0; i < products.size(); i++) {

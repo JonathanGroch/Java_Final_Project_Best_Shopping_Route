@@ -11,8 +11,7 @@
 
 	<servlet>
 		<servlet-name>BriefTrek</servlet-name>
-		<servlet-class>BriefTrekServlet</servlet-class>
-		<load-on-startup>1</load-on-startup>
+		<servlet-class>BT_Package.BriefTrekServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
