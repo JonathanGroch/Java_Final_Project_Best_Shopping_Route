@@ -56,7 +56,7 @@ public class BriefTrekServlet extends HttpServlet {
 	    	  out.println("<li>" + products.get(i) + "<li>");
 	      }
 	      out.println("</o>"); */
-		Graph tsp = new Graph();
+		Graph tsp = new Graph(products.size());
 		try {
 			tsp.read(products, 2);
 		} catch (ClassNotFoundException e) {

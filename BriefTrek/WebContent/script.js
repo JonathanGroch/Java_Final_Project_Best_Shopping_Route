@@ -9,7 +9,7 @@ var menardsItems = ["plywood", "dark matter", "garbage"];
 var meijerItems = ["poop", "blueberries", "landfills"];
 
 var getBtn = document.getElementById('myBtn');
-getBtn.onclick = function() {
+	getBtn.onclick = function() {
     getTheData() ;
 }
 
@@ -38,10 +38,10 @@ function getTheData() {
 function addInput(divName){
 
           var newdiv = document.createElement('div');
-          newdiv.innerHTML = "Item:" + "<input type='text' name='myInputs[]'>";
+          newdiv.innerHTML = "Item: " + " <input type='text' name='myInputs[]'>";
           document.getElementById(divName).appendChild(newdiv);
           counter++;
-     }
+}
 
 //changes page content when nav tabs are clicked
 function openStore(evt, storeName) {

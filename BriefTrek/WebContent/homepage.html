@@ -20,29 +20,41 @@
 			<div class="maparea">
 				<h1> Shopping Simulator 900</h1>
 				<h5> Select your desired store and enter desired items on form </h5>
-				<img src="http://www.naturalconcreteproducts.com/wp-content/uploads/2019/02/menards-logo-vector.png" width="150" height="33"></i></a></li>
-  				<img src='https://i.postimg.cc/7fnrGrCq/target.png' border='0'width="150" height="33" alt='target'/></a></li>
-				<img src='https://i.postimg.cc/4Y1VnPRY/costco.png' border='0' width="150" height="33" alt='costco'/></a></i></a></li>
+				<img src="http://www.naturalconcreteproducts.com/wp-content/uploads/2019/02/menards-logo-vector.png" width="150" height="33">
+  				<img src='https://i.postimg.cc/7fnrGrCq/target.png' border='0'width="150" height="80" alt='target'/>
+				<img src='https://i.imgur.com/jvAe0cI.png' border='0' width="150" height="60" alt='costco'/>
 
 			</div>
 			<!--Content displayed to the side of the map-->
 			<div class="tabside">
-				test info
 				<!--Form-->
-				<form autocomplete="off">
-					items </br>
-					<div class="autocomplete">
-						<input type="text" id="searchForm" name="itemList" placeholder="Start typing...">
-					</div>
-					<input type="button" value="Select">
-				</form>
+				<!-- <form action ="BriefTrek" method="POST" >
+				<h1> Enter Items Here </h1>-->
+				<!-----form------>
+
+
+				<!-- <script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
+
+				
+    				<div id="dynamicInput">
+          			Item: <input type="text" name = "products" class="some"/>
+     				</div>
+     				<br/>
+    				<input type="button" value="Add Item" onClick="addInput('dynamicInput');">
+    				<br/>
+    				<button id = "myBtn"> Submit </button>
+				
+				<br/>
+				<div id="showInputValues">
+				</div>
+			</form>-->
 
 			</div>
 		</div>
 
 		<div id="Target" class="tabcontent">
 			<div class="maparea">
-				<a href = "https://www.target.com"><img src ="https://i.postimg.cc/255f8bZ9/targetmap.png" width="600" height="500"></a>
+				<a href = "https://www.target.com"><img src ="https://i.postimg.cc/255f8bZ9/targetmap.png" width="700" height="500"></a>
 				<br>
 			</div>
 			
@@ -55,13 +67,13 @@
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
 
 				
-    				<div id="dynamicInput">
-          			Item:<input type="text" name = "products" class="some"/>
+    				<div id="dynamicInput4">
+          				Item: <input type="text" name = "products" class="some"/>
      				</div>
      				<br/>
-    				<input type="button" value="Add Item" onClick="addInput('dynamicInput');">
+    				 <input type="button" value="Add Item" onClick="addInput('dynamicInput4');">
     				<br/>
-    				<button id = "myBtn"> Submit </button>
+    				<input type = "submit" value = "Submit" />
 				
 				<br/>
 				<div id="showInputValues">
@@ -73,7 +85,7 @@
 
 		<div id="Meijer" class="tabcontent">
 			<div class="maparea">
-				<a href = "https://www.meijer.com"><img src ="https://github.com/JonathanGroch/Java_Final_Project_Best_Shopping_Route/blob/master/Meijers_Map.jpg?raw=true" width="600" height="500"></a>
+				<a href = "https://www.meijer.com"><img src ="https://i.postimg.cc/SNWYvtt6/Meijers-Map.jpg" width="700" height="500"></a>
 			</div>
 
 			<div class="tabside">
@@ -81,8 +93,9 @@
 				<!-----form------>
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
 				<form action="BriefTrek" method="POST">
+					<input type="hidden" value="3">
     				<div id="dynamicInput2">
-          			Item:<input type="text" name="myInputs[]">
+          				Item: <input type="text" name="myInputs[]">
      				</div>
      				<br>
     				<input type="button" value="Add Item" onClick="addInput('dynamicInput2');">
@@ -96,7 +109,7 @@
 
 		<div id="Menards" class="tabcontent">
 			<div class="maparea">
-				<a href = "https://www.menards.com"><img src ="https://hw.menardc.com/main/assets/images5/maps/master/3323-1.png" width="600" height="500"></a>
+				<a href = "https://www.menards.com"><img src ="https://hw.menardc.com/main/assets/images5/maps/master/3323-1.png" width="700" height="500"></a>
 			</div>
 
 			<div class ="extrafeature">
@@ -107,8 +120,9 @@
 				<!-----form------>
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
 				<form action="BriefTrek" method="POST">
+					<input type="hidden" value="2">
     				<div id="dynamicInput3">
-          			Item:<input type="text" name="myInputs[]">
+          			Item: <input type="text" name="myInputs[]">
      				</div>
      				<br>
     				<input type="button" value="Add Item" onClick="addInput('dynamicInput3');">

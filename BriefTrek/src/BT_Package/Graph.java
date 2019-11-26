@@ -91,6 +91,7 @@ public class Graph {
 			int i;
 			
 			for(i = 1; i < numVertices; i++) {
+				
 				System.out.print(productName.get(perPath.get(i).intValue() - 1) + ", "); //Delete this code
 				tempWaypointName.add(waypointName.get(perPath.get(i).intValue() - 1));
 				tempProductName.add(productName.get(perPath.get(i).intValue() - 1));
@@ -120,7 +121,6 @@ public class Graph {
 			tempBit[itr.next().intValue() - 1] = 1;
 		}
 
-		
 		int bitValue = bitArrayToInt(tempBit);
 		if (table[begin][bitValue] != 0) {
 			return table[begin][bitValue];
