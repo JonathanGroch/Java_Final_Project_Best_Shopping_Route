@@ -17,14 +17,14 @@ public class Graph {
 	private ArrayList<Double> tempPath; //temporary shortest path
 	private double[][] adjMatrix; //stores distance from all waypoints to all other waypoints
 	private int numVertices; //number of items in the list
-	private ArrayList<Point2D> waypointCoords;
-	private ArrayList<String> waypointName;
-	private ArrayList<String> productName;
+	private ArrayList<Point2D> waypointCoords; //List of coordinates for each item
+	private ArrayList<String> waypointName; //List of waypoint name
+	private ArrayList<String> productName; //List of product
 	private double INF = Double.MAX_VALUE; //Max value
-	private final int SET_VERTICES = 1;
-	private int storeId;
+	private final int SET_VERTICES = 1; //Extra vertices. Set to 1 since Entrance will always be in the calculation
+	private int storeId; //Which store tsp will be dealin with
 
-	//calculates the distance between two items and stores it into the adjMatrix table
+	//calculates the distance between two items and stores it into the adjMatrix table for findShortestPath()
 	private void addAllWeight() { 
 		for(int i = 1; i < numVertices + 1; i++) { // +1 since skip [0][0]
 			for(int j = 1; j < numVertices + 1; j++) {
@@ -96,15 +96,15 @@ public class Graph {
 		
 		//if the minVal is higher than our INF, then there is no shortest path
 		if(minVal>= INF-10000) {
-			System.out.println("No Hamiltonian Cycle");
+			tempWaypointName.add("Empty");
+			tempProductName.add("Empty");
+			return new Pair<ArrayList<String>,ArrayList<String>>(tempWaypointName, tempProductName);
 		}
 		//prints out shortest path by item name
 		else {
-			System.out.println("Optimal Shopping Path = [ " + minVal + ", <");
 			int i;
 			//gets the value in position i in permanent path and find the corresponding item in product name
 			for(i = 1; i < numVertices; i++) {
-				System.out.print(productName.get(perPath.get(i).intValue() - 1) + ", "); //Delete this code
 				tempWaypointName.add(waypointName.get(perPath.get(i).intValue() - 1));
 				tempProductName.add(productName.get(perPath.get(i).intValue() - 1));
 			}
@@ -112,9 +112,6 @@ public class Graph {
 			tempProductName.add(productName.get(perPath.get(i).intValue() - 1));
 			tempWaypointName.add(waypointName.get(waypointName.size() - 1));
 			tempProductName.add(productName.get(productName.size() - 1));
-			System.out.print(productName.get(perPath.get(i).intValue() - 1) + ", ");//Delete this code
-			System.out.println("Cashier> ]"); // To cash register //Delete this code
-			
 			
 		}
 		return new Pair<ArrayList<String>,ArrayList<String>>(tempWaypointName, tempProductName);
@@ -191,6 +188,7 @@ public class Graph {
 		return minValue;
 	}
 	
+	//Queries data for findShortedPath()
 	void read(ArrayList<String> products, int storeID) throws SQLException, ClassNotFoundException{//void read(ArrayList<String> products) throws SQLException, ClassNotFoundException{ // Works
 				// Get Connection
 				Connection connection = JDBCConnect.getConnection();
@@ -206,15 +204,15 @@ public class Graph {
 					ResultSet waypoint = statement.executeQuery("select productName, waypoint from Product join Category on (Product.productName = " + "'" + products.get(i) + "') and (Product.categoryID = Category.categoryID) and (Category.storeID = " + String.valueOf(storeID) + ")");
 					waypoint.next(); //Make sure to point at the correct item
 
-		            productName.add(waypoint.getString(1)); //Pair of productName and waypoint name
+		            productName.add(waypoint.getString(1)); //Get product name from query
 		           
-		            ResultSet coord = statement.executeQuery("select * from Location where (waypoint = " + "'" + waypoint.getString(2) + "')");
+		            ResultSet coord = statement.executeQuery("select * from Location where (waypoint = " + "'" + waypoint.getString(2) + "')"); //Query correct coordinates
 		            coord.first();
-		            waypointName.add(coord.getString(1));
-		            waypointCoords.add(new Point2D.Double(coord.getDouble(2), coord.getDouble(3)));			
+		            waypointName.add(coord.getString(1)); //Add waypoint name
+		            waypointCoords.add(new Point2D.Double(coord.getDouble(2), coord.getDouble(3))); //Add coordinates	
 				}
 				
-				//Getting entrance
+				//Getting entrance from correct store
 				ResultSet beginAndEnd = null;
 				switch(storeID) {
 					case 1:
@@ -231,18 +229,19 @@ public class Graph {
 						break;
 						
 				}
-				
+		
+				//Add entrance in front of list to be part of calculation
 				beginAndEnd.next();
 				productName.add(0, "Entrance");
 				waypointName.add(0, beginAndEnd.getString(1));
 				waypointCoords.add(0, new Point2D.Double(beginAndEnd.getDouble(2), beginAndEnd.getDouble(3)));
 				
-				//Get Cashier
+				//Get cashier to be added at the end of calculation
 				beginAndEnd.next();
 				productName.add("Cashier");
 				waypointName.add(beginAndEnd.getString(1));
 				
 				connection.close();
-				addAllWeight();
+				addAllWeight(); //Initialize adjacency matrix with appropriate weight of the graph
 	}
 }
