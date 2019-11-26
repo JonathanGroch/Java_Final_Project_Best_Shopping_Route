@@ -1,6 +1,7 @@
 package mainPacket;
 
 import mainPacket.Graph;
+import mainPacket.DirectionsStore;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -41,7 +42,15 @@ public class mainDriver {
 			t1.read(t, storeID);
 			//finds shortest path
 			Pair<ArrayList<String>,ArrayList<String>> list = t1.findShortestPath();
-			//t1.printMatrix();
+			DirectionsStore ds = new DirectionsStore(list, t1.getStoreId());
+			ds.splitArrays();
+			ds.categories();
+			ds.ListOfDirections();
+			ArrayList<String> directions = ds.getListOfDirections();
+			for(int i = 0; i < directions.size(); i++) {
+				System.out.println(directions.get(i));
+			}
+			
 		}	
 }
 

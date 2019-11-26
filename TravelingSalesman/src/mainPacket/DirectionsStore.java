@@ -1,4 +1,5 @@
-package BT_Package;
+package mainPacket;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -17,18 +18,15 @@ public class DirectionsStore {
 	private ArrayList<String> categories;
 	//No Arg Constructor
 	DirectionsStore() {
+			
+	}
+	//Single Arg Constructor
+	DirectionsStore(Pair<ArrayList<String>, ArrayList<String>> input, int storeID) {
+		optimalPath = input;
 		categories = new ArrayList<String>();
 		waypoints = new ArrayList<String>();
 		products = new ArrayList<String>();
 		listOfDirections = new ArrayList<String>();
-	}
-	//Single Arg Constructor
-	DirectionsStore(Pair<ArrayList<String>, ArrayList<String>> input) {
-		optimalPath = input;
-	}
-	
-	public void reader(Pair<ArrayList<String>, ArrayList<String>> input) {
-		optimalPath = input;
 	}
 	//Imports the TSP result pair arrayList, holding waypoints and products respectively
 	public void scanner(Pair<ArrayList<String>, ArrayList<String>> optimalPath) {
@@ -45,7 +43,7 @@ public class DirectionsStore {
 	public void categories() {
 		try {
 			categories.add(products.get(0));
-			Connection conn = BT_Package.JDBCConnect.getConnection();
+			Connection conn = mainPacket.JDBCConnect.getConnection();
 			
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			for(int i = 1; i < (products.size() - 1); i++) {

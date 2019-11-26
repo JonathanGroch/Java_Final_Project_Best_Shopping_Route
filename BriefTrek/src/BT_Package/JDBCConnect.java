@@ -1,25 +1,33 @@
 package BT_Package;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import com.mysql.cj.jdbc.MysqlDataSource;
+
 public class JDBCConnect {
-	JDBCConnect() throws ClassNotFoundException, InstantiationException, IllegalAccessException{
+
+	JDBCConnect() throws ClassNotFoundException{
 		//Initialize connection to database
 		// Load the JDBC driver
-		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("Driver loaded");
-		
 	}
 	static Connection getConnection() throws SQLException {
 		// Establish a connection
-		String myUrl = "jdbc:mysql://localhost:3306/StoreNavigator";
+		String myUrl = "jdbc:mysql://localhost/StoreNavigator?useSSL=false";
 		DriverManager.getDrivers();
 		Connection connection = DriverManager.getConnection(myUrl, "root", "sesame");
 		System.out.println("Database connected");
 		return connection;
 	}
+	/*public static void main(String[] arg) {
+		try {
+			Connection conn = JDBCConnect.getConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	} */
 }
