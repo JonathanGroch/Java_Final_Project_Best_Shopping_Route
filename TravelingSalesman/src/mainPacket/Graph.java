@@ -22,6 +22,7 @@ public class Graph {
 	private ArrayList<String> productName;
 	private double INF = Double.MAX_VALUE; //Max value
 	private final int SET_VERTICES = 1;
+	private int storeId;
 
 	//calculates the distance between two items and stores it into the adjMatrix table
 	private void addAllWeight() { 
@@ -65,6 +66,9 @@ public class Graph {
 		adjMatrix = temp1;		
 	}
 	
+	public int getStoreId() {
+		return storeId;
+	}
 	 //function to convert an array fo 32 filled with 1 and 0 into a decimal number
 	private int bitArrayToInt(int[] tempBit) {
 		int value = 0;

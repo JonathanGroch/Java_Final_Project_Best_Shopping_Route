@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.sql.Connection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,14 +15,15 @@ import javax.servlet.http.HttpServletResponse;
 
 import BT_Package.DirectionsStore;
 import BT_Package.Graph;
-
+import javafx.util.Pair;
 /**
  * Servlet implementation class BriefTrekServlet
  */
 //@WebServlet("/BriefTrekServlet")
 public class BriefTrekServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	
+	public Graph tsp;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -47,6 +49,13 @@ public class BriefTrekServlet extends HttpServlet {
 	         }
 
 	      }
+	      /*response.setContentType("text/html");
+	      PrintWriter out = response.getWriter();
+	      out.println("<ol>");
+	      for(int i = 0; i < products.size(); i++) {
+	    	  out.println("<li>" + products.get(i) + "<li>");
+	      }
+	      out.println("</o>"); */
 		Graph tsp = new Graph();
 		try {
 			tsp.read(products, 2);
@@ -55,9 +64,15 @@ public class BriefTrekServlet extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		DirectionsStore ds = new DirectionsStore(tsp.findShortestPath());
+		Pair<ArrayList<String>, ArrayList<String>> temp = tsp.findShortestPath();
+		DirectionsStore ds = new DirectionsStore();
+		ds.reader(temp);
 		ds.splitArrays();
 		ds.categories();
+		ds.ListOfDirections();
+		
+		
+		
 		ArrayList<String> directions  = ds.getListOfDirections();
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
@@ -65,7 +80,7 @@ public class BriefTrekServlet extends HttpServlet {
 		for(int i = 0; i < directions.size(); i++) {
 			out.println("<li>" + directions.get(i) + "</li>");
 		}
-		out.println("</ol>");
+		out.println("</ol>"); 
 	}
 
 	/**
@@ -74,5 +89,6 @@ public class BriefTrekServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
+	
 
 }
