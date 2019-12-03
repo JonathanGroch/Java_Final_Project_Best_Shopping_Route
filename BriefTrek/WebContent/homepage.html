@@ -9,7 +9,7 @@
 	<body>
 		<!--Navigation bar-->
 		<div class="navbar">
-			<button class="navtab" onclick="openStore(event, 'Home')" id="defaultOpen">HOME</button>
+			<button class="navtab" onclick="openStore(event, 'Home')" id="defaultOpen">BRIEFTREK</button>
 			<button class="navtab" onclick="openStore(event, 'Target')">TARGET</button>
 			<button class="navtab" onclick="openStore(event, 'Meijer')">MEIJER</button>
 			<button class="navtab" onclick="openStore(event, 'Menards')">MENARDS</button>
@@ -18,18 +18,18 @@
 		<!--Content associated with each button is contained here-->
 		<div id="Home" class="tabcontent" style="display: grid">
 			<div class="maparea">
-				<h1> Shopping Simulator 900</h1>
-				<h5> Select your desired store and enter desired items on form </h5>
-				<img src="http://www.naturalconcreteproducts.com/wp-content/uploads/2019/02/menards-logo-vector.png" width="150" height="33">
+				<h1>Welcome to BriefTrek</h1>
+				<h3>Select your desired store and enter desired items on form </h3>
+				<!-- <img src="http://www.naturalconcreteproducts.com/wp-content/uploads/2019/02/menards-logo-vector.png" width="150" height="33">
   				<img src='https://i.postimg.cc/7fnrGrCq/target.png' border='0'width="150" height="80" alt='target'/>
-				<img src='https://i.imgur.com/jvAe0cI.png' border='0' width="150" height="60" alt='costco'/>
+				<img src='https://i.imgur.com/jvAe0cI.png' border='0' width="150" height="60" alt='costco'/> -->
 
 			</div>
 			<!--Content displayed to the side of the map-->
 			<div class="tabside">
 				<!--Form-->
 				<!-- <form action ="BriefTrek" method="POST" >
-				<h1> Enter Items Here </h1>-->
+				<h1> enter items here </h1>-->
 				<!-----form------>
 
 
@@ -60,19 +60,15 @@
 			
 			<div class="tabside">
 			<form action ="BriefTrek" method="POST" >
-				<h1> Enter Items Here </h1>
+				<h1> enter items here </h1>
 				<!-----form------>
-
-
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
-
-				
+					<input type="button" value="Add Item" onClick="addInput('dynamicInput4');">
+					<br><br>
     				<div id="dynamicInput4">
           				Item: <input type="text" name = "products" class="some"/>
      				</div>
      				<br/>
-    				 <input type="button" value="Add Item" onClick="addInput('dynamicInput4');">
-    				<br/>
     				<input type = "submit" value = "Submit" />
 				
 				<br/>
@@ -89,18 +85,18 @@
 			</div>
 
 			<div class="tabside">
-				<h1> Enter Items Here </h1>
+				<h1> enter items here </h1>
 				<!-----form------>
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
 				<form action="BriefTrek" method="POST">
+					<input type="button" value="Add Item" onClick="addInput('dynamicInput2');"> 
+   					<br><br>
 					<input type="hidden" value="3">
     				<div id="dynamicInput2">
           				Item: <input type="text" name="myInputs[]">
      				</div>
      				<br>
-    				<input type="button" value="Add Item" onClick="addInput('dynamicInput2');">
-    				<br>
-    				<input type = "submit" value = "Submit" />
+    				<input type = "submit" value = "Submit"/>
 				</form>
 		
 			</div>
@@ -112,21 +108,18 @@
 				<a href = "https://www.menards.com"><img src ="https://hw.menardc.com/main/assets/images5/maps/master/3323-1.png" width="700" height="500"></a>
 			</div>
 
-			<div class ="extrafeature">
-				<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=41.8781&amp;lon=87.6298&amp;name=Chicago&amp;color=red"> </iframe>
-			</div>
 			<div class="tabside">
-				<h1> Enter Items Here </h1>
+				<h1> enter items here </h1>
 				<!-----form------>
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
 				<form action="BriefTrek" method="POST">
+    				<input type="button" value="Add Item" onClick="addInput('dynamicInput3');">
+    				<br><br>
 					<input type="hidden" value="2">
     				<div id="dynamicInput3">
           			Item: <input type="text" name="myInputs[]">
      				</div>
      				<br>
-    				<input type="button" value="Add Item" onClick="addInput('dynamicInput3');">
-    				<br>
     				<input type = "submit" value = "Submit" />
 				</form>
 		
@@ -136,7 +129,6 @@
 	</body>
 
 	<footer>
-
-
+		Created by Hummus Squad
 	</footer>
 </html>
