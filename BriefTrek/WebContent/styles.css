@@ -42,21 +42,19 @@ body {
 	padding: 20px 20px;
 	text-align: center;
 	text-decoration: none;
-	text-shadow: 0px 2px 2px rgba(31,110,15,0.5);
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 	font-size: 17px;
 	font-weight: 200;
-	letter-spacing: 2.5px;
+	letter-spacing: 4px;
 	transition: 0.2s;
 }
 
 .navbar button:hover {
 	background-image: linear-gradient(var(--navbar-bg), var(--button-bg2));
-	box-shadow: 0px 5px 7px rgba(50,70,0,0.5);
 }
 
 .navbar button.active {
 	background-image: linear-gradient(var(--button-bg2), var(--button-bg3));
-	box-shadow: 0px 5px 7px rgba(50,70,0,0.5);
 	color: white;
 }
 
@@ -100,7 +98,6 @@ input[type="button"] {
 	cursor: pointer;
 	outline: 0;
 	background-color: var(--main-body);
-	font-weight: bold;
 	font-size: 14px;
 	font-family: Canbara, sans-serif;
 	color: var(--main-bg);
@@ -115,7 +112,6 @@ input[type="submit"] {
 	cursor: pointer;
 	outline: 0;
 	background-color: var(--main-body);
-	font-weight: bold;
 	font-size: 14px;
 	font-family: Canbara, sans-serif;
 	color: var(--main-bg);  
@@ -130,15 +126,15 @@ input[type="button"]:hover, input[type="submit"]:hover {
 
 input[type="text"] {
 	border: 0;
+	border-radius: 3px;
 	padding: 8px;
 	margin-top: 3px;
 	margin-bottom: 3px
 	border-radius: 2px;
 	font-family: Canbara, sans-serif;
 	background-color: var(--main-body);
-	color: var(--button-text);
+	color: var(--main-bg);
 	font-size: 14px;
-	font-weight: default;
 }
 
 footer {
