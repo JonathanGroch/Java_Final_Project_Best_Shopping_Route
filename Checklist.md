@@ -6,4 +6,3 @@ THINGS TO DO:
   - Polish results page and make it look not barebones and ugly
   - Autocomplete filter
   - What if the product you want isn't in database? Do some input validation
-  - Still some bugs. More than one item crashes TSP.
