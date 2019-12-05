@@ -56,6 +56,7 @@ public class BriefTrekServlet extends HttpServlet {
 	    	  out.println("<li>" + products.get(i) + "<li>");
 	      }
 	      out.println("</o>"); */
+	    System.out.println(products);
 		Graph tsp = new Graph(products.size());
 		try {
 			tsp.read(products, 2);
@@ -76,11 +77,21 @@ public class BriefTrekServlet extends HttpServlet {
 		ArrayList<String> directions  = ds.getListOfDirections();
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
+		out.println("<html><head><title>Your Route</title>" + 
+					"<link rel='stylesheet' type='text/css' href='styles.css'>" +
+					"<body><div class='navbar'><button class='navtab'> " +
+					"YOUR ROUTE</button><a href='/BriefTrek'><button class='navtab'>" +
+					"GO BACK</button></a></div>" +
+					"<div id='Home' class='tabcontent' style='display: grid'>" +
+					"<div class='maparea'>");
 		out.println("<ol>");
 		for(int i = 0; i < directions.size(); i++) {
 			out.println("<li>" + directions.get(i) + "</li>");
 		}
-		out.println("</ol>"); 
+		out.println("</ol>");
+		out.println("</div><div class='tabside'>" +
+					"</div></div></body>" +
+					"<footer>Created by Hummus Squad</footer></html>");
 	}
 
 	/**
