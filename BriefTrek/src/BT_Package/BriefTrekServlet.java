@@ -84,7 +84,7 @@ public class BriefTrekServlet extends HttpServlet {
 					"GO BACK</button></a></div>" +
 					"<div id='Home' class='tabcontent' style='display: grid'>" +
 					"<div class='maparea'>");
-		out.println("<ol>");
+		out.println("<ol style='text-align:center; list-style-position:inside;'>");
 		for(int i = 0; i < directions.size(); i++) {
 			out.println("<li>" + directions.get(i) + "</li>");
 		}
