@@ -65,6 +65,7 @@
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
 					<input type="button" value="Add Item" onClick="addInput('dynamicInput4');">
 					<br><br>
+					<input type="hidden" name="hiddenValue" value="3">
     				<div id="dynamicInput4">
           				Item: <input type="text" name = "products" class="some"/>
      				</div>
@@ -91,7 +92,7 @@
 				<form action="BriefTrek" method="POST">
 					<input type="button" value="Add Item" onClick="addInput('dynamicInput2');"> 
    					<br><br>
-					<input type="hidden" value="3">
+					<input type="hidden" name="hiddenValue" value="3">
     				<div id="dynamicInput2">
           				Item: <input type="text" name="myInputs[]">
      				</div>
@@ -115,7 +116,7 @@
 				<form action="BriefTrek" method="POST">
     				<input type="button" value="Add Item" onClick="addInput('dynamicInput3');">
     				<br><br>
-					<input type="hidden" value="2">
+					<input type="hidden" name="hidenValue" value="2">
     				<div id="dynamicInput3">
           			Item: <input type="text" name="myInputs[]">
      				</div>
