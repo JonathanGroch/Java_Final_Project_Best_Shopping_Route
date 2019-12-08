@@ -40,18 +40,21 @@ public class BriefTrekServlet extends HttpServlet {
 	  	String hidden = request.getParameter("hiddenValue");
 	  	int storeId = Integer.parseInt(hidden);
 	  	
-	      while(paramNames.hasMoreElements()) {
-	         String paramName = (String)paramNames.nextElement();
-	         String[] paramValues = request.getParameterValues(paramName);
-	         
-	         if(paramValues.length != 0) {
+	  	// paramName is initiated and advanced once before the execution of the while loop
+	  	// so that the storeID doesn't get passed in as part of the list of products
+	  	String paramName = (String)paramNames.nextElement();
+	  	
+	    while(paramNames.hasMoreElements()) {
+	    	paramName = (String)paramNames.nextElement();
+	    	String[] paramValues = request.getParameterValues(paramName);
+	        	    	
+		    if(paramValues.length != 0) {
 	        	 for(int i = 0; i < paramValues.length; i++) {
 	        		 products.add(paramValues[i]);
 	        	 }
-	         }
-
-	      }
-	      
+	        }
+	    }
+	    
 	    DetectProducts dp = new DetectProducts(products, storeId);
 	    if(dp.getErrorBoolean()) {
 			response.setContentType("text/html");

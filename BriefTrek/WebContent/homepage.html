@@ -19,7 +19,7 @@
 		<div id="Home" class="tabcontent" style="display: grid">
 			<div class="maparea">
 				<h1>Welcome to BriefTrek</h1>
-				<h3>Select your desired store and enter desired items on form </h3>
+				<h3>Select your store and enter your items on the form</h3>
 			</div>
 			<!--Content displayed to the side of the map-->
 			<div class="tabside">
@@ -37,10 +37,10 @@
 				<h1> enter items here </h1>
 				<!-----form------>
 				<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
-					<input type="button" value="Add Item" onClick="addInput('dynamicInput4');">
+					<input type="button" value="Add Item" onClick="addInput('dynamicInput1');">
 					<br><br>
 					<input type="hidden" name="hiddenValue" value="3">
-    				<div id="dynamicInput4">
+    				<div id="dynamicInput1">
           				Item: <input type="text" name = "products" class="some"/>
      				</div>
      				<br/>
@@ -66,7 +66,7 @@
 				<form action="BriefTrek" method="POST">
 					<input type="button" value="Add Item" onClick="addInput('dynamicInput2');"> 
    					<br><br>
-					<input type="hidden" name="hiddenValue" value="3">
+					<input type="hidden" name="hiddenValue" value="1">
     				<div id="dynamicInput2">
           				Item: <input type="text" name="myInputs[]">
      				</div>
@@ -89,7 +89,7 @@
 				<form action="BriefTrek" method="POST">
     				<input type="button" value="Add Item" onClick="addInput('dynamicInput3');">
     				<br><br>
-					<input type="hidden" name="hidenValue" value="2">
+					<input type="hidden" name="hiddenValue" value="2">
     				<div id="dynamicInput3">
           			Item: <input type="text" name="myInputs[]">
      				</div>

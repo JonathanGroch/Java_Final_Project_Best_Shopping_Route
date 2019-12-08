@@ -72,16 +72,16 @@ public class DirectionsStore {
  		this.listOfDirections.add("You arrive at the store, ready to start shopping!");
  		for(int i = 1; i < categories.size(); i++) {
  			if(i == 1) {
- 				this.listOfDirections.add("First you'll go to " + categories.get(i) + " to get product " + products.get(i));
+ 				this.listOfDirections.add("First, you'll go to the  " + categories.get(i) + " section to get product " + products.get(i) + ".");
  			}
  			else if(i + 1 == products.size()) {
- 				this.listOfDirections.add("Lastly you'll go to " + categories.get(i) + " to get product " + products.get(i));
+ 				this.listOfDirections.add("Last, you'll go to the  " + categories.get(i) + " section to get product " + products.get(i) + ".");
  			}
  			else {
- 				this.listOfDirections.add("Next you'll go to " + categories.get(i) + " to get product " + products.get(i));
+ 				this.listOfDirections.add("Next, you'll go to the " + categories.get(i) + " section to get product " + products.get(i) + ".");
  			}
  		}
- 		this.listOfDirections.add("Now you're done! Huzzah, you are ready to checkout with your items!");
+ 		this.listOfDirections.add("Now you're done! Huzzah, you are ready to check out with your items!");
 	}
  	//Returns the listOfDirections
  	public ArrayList<String> getListOfDirections() {
