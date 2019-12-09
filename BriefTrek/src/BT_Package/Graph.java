@@ -102,8 +102,6 @@ public class Graph {
 			tempProductName.add(productName.get(productName.size() - 1));
 			System.out.print(productName.get(perPath.get(i).intValue() - 1) + ", ");//Delete this code
 			System.out.println("Cashier> ]"); // To cash register //Delete this code
-			
-			
 		}
 		return new Pair<ArrayList<String>,ArrayList<String>>(tempWaypointName, tempProductName);
 	}
