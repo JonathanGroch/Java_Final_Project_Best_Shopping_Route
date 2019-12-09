@@ -85,7 +85,6 @@ public class Graph {
 		SortedSet<Integer> tempArray = new TreeSet<Integer>(); 
 		ArrayList<String> tempWaypointName = new ArrayList<String>();
 		ArrayList<String> tempProductName = new ArrayList<String>();
-		
 		//fills the temporary array with the positions in graph (start at 2 since position 1 is used in the g() function)
 		for (int i = 2; i < numVertices + 1; i++) {
 			tempArray.add(i);
@@ -110,7 +109,6 @@ public class Graph {
 			tempProductName.add(productName.get(perPath.get(i).intValue() - 1));
 			tempWaypointName.add(waypointName.get(waypointName.size() - 1));
 			tempProductName.add(productName.get(productName.size() - 1));
-			
 		}
 		return new Pair<ArrayList<String>,ArrayList<String>>(tempWaypointName, tempProductName);
 	}
