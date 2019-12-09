@@ -90,10 +90,8 @@ public class Graph {
 		for (int i = 2; i < numVertices + 1; i++) {
 			tempArray.add(i);
 		}
-		
 		//calls on the g() function to find the minimum value for the path
 		double minVal = g(1, tempArray);
-		
 		//if the minVal is higher than our INF, then there is no shortest path
 		if(minVal>= INF-10000) {
 			tempWaypointName.add("Empty");
