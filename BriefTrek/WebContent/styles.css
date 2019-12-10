@@ -1,16 +1,18 @@
 /* Comment your stuff and finish up shadow colors*/
 
+/* hex color variables used for ease of color scheme changes */
 :root {
 	--main-bg: #18121E;
 	--main-body: #f0ebd8; /* light color */
-	--navbar-bg: #233237; /**/
-	--button-text: #eac67a; /* currently not in use */
+	--navbar-bg: #233237
+	--button-text: #eac67a;
 	--button-bg2: #c09f80;
 	--button-bg3: #f7e8c3;
 	--tabside-bg: #76323f;
 	--footer-bg: var(--navbar-bg);
 };
 
+/* laying down foundation for background colors and text */
 html {
 	background-color: var(--main-bg);
 	font-family: sans-serif;
@@ -23,6 +25,7 @@ body {
 	font-weight: bold;
 }
 
+/* Styling for the container that contains the nav buttons on the top*/
 .navbar {
 	position: relative;
 	background-color: var(--navbar-bg);
@@ -33,12 +36,14 @@ body {
 	z-index: 1;
 }
 
+/* Removes link styling on "GO BACK" button */	
 a:-webkit-any-link {
 	color: inherit;
 	text-decoration: none;
 	
 }
 
+/* Styling for actual buttons on the nav bar */
 .navbar button {
 	background-color: inherit;
 	float: left;
@@ -55,15 +60,18 @@ a:-webkit-any-link {
 	transition: 0.2s;
 }
 
+/* creates a gradient background when hovering over button */
 .navbar button:hover {
 	background-image: linear-gradient(var(--navbar-bg), var(--button-bg2));
 }
 
+/* Changes text and background when button is active/clicked */
 .navbar button.active {
 	background-image: linear-gradient(var(--button-bg2), var(--button-bg3));
 	color: white;
 }
 
+/* background, text styling, and formatting for container containing sidebar and map area */
 .tabcontent {
 	display: none;
 	grid-template-columns: 65% 35%;
@@ -77,6 +85,7 @@ a:-webkit-any-link {
 	z-index: 0;
 }
 
+/* Styling for area that usually contains the map */
 .maparea {
 	background-color: var(--main-body);
 	text-align: center;
@@ -86,6 +95,7 @@ a:-webkit-any-link {
 	border-radius: 2px;
 }
 
+/* Formatting for what usually contains the form on the side */
 .tabside {
 	background-color: var(--tabside-bg);
 	color: var(--main-body);
@@ -109,6 +119,7 @@ input[type="button"] {
 	color: var(--main-bg);
 }
 
+/* Same as button styling */
 input[type="submit"] {
 	border: 0;
 	padding: 8px;
@@ -130,6 +141,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
     color: var(--main-body);
 }
 
+/* Styling for text fields */
 input[type="text"] {
 	border: 0;
 	border-radius: 3px;
@@ -143,6 +155,7 @@ input[type="text"] {
 	font-size: 14px;
 }
 
+/* Footer fanciness */
 footer {
 	position: fixed;
 	left: 0px;

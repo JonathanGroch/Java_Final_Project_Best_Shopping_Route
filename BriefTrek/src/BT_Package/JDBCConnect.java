@@ -23,11 +23,4 @@ public class JDBCConnect {
 		System.out.println("Database connected");
 		return connection;
 	}
-	/*public static void main(String[] arg) {
-		try {
-			Connection conn = JDBCConnect.getConnection();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	} */
 }

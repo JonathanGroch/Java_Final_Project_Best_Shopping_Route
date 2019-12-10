@@ -59,6 +59,8 @@ public class BriefTrekServlet extends HttpServlet {
 	    if(dp.getErrorBoolean()) {
 			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
+			
+			// Results page outputted 
 			out.println("<html><head><title>Your Route</title>" + 
 						"<link rel='stylesheet' type='text/css' href='styles.css'>" +
 						"<body><div class='navbar'><button class='navtab'> " +
@@ -67,10 +69,12 @@ public class BriefTrekServlet extends HttpServlet {
 						"<div id='Home' class='tabcontent' style='display: grid'>" +
 						"<div class='maparea'>");
 			out.println("<ul style='text-align:center; list-style-position:inside;'>");
+			// Actual results list
 			for(int i = 0; i < dp.getDetectErrList().size(); i++) {
 				out.println("<li>" + dp.getDetectErrList().get(i) + "</li>");
 			}
 			out.println("</ul>");
+			//End of HTML formatting
 			out.println("</div><div class='tabside'>" +
 						"</div></div></body>" +
 						"<footer>Created by Hummus Squad</footer></html>");
@@ -91,7 +95,6 @@ public class BriefTrekServlet extends HttpServlet {
 			ds.splitArrays();
 			ds.categories();
 			ds.ListOfDirections();
-			
 			
 			
 			ArrayList<String> directions  = ds.getListOfDirections();
