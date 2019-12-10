@@ -44,16 +44,21 @@ public class DirectionsStore {
 	//Calls the database to get categories
 	public void categories() {
 		try {
+			//Establish connections
+			//Gets cashier first 
 			categories.add(products.get(0));
 			Connection conn = BT_Package.JDBCConnect.getConnection();
 			
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+			//Doesn't check the first item or the last items, since they are going to be entrance and checkout
 			for(int i = 1; i < (products.size() - 1); i++) {
 				String query = "select categoryName from Product join Category on (Product.productName = " + "\"" + products.get(i).toString() + "\"" + ") and (Product.categoryID = Category.categoryID)";
 				ResultSet category = stmt.executeQuery(query);
+				//Checks if resultSet is empty, then throws error in console
 				if(!category.next()) {
 					System.out.println("Result Set is empty");
 				}
+				//Else it adds it to category
 				else {
 					String temp = category.getString(1);
 					categories.add(temp);
@@ -74,6 +79,7 @@ public class DirectionsStore {
  			if(i == 1) {
  				this.listOfDirections.add("First, you'll go to the  " + categories.get(i) + " section to get product " + products.get(i) + ".");
  			}
+			//Broken doesn't work, or deprecated
  			else if(i + 1 == products.size()) {
  				this.listOfDirections.add("Last, you'll go to the  " + categories.get(i) + " section to get product " + products.get(i) + ".");
  			}
