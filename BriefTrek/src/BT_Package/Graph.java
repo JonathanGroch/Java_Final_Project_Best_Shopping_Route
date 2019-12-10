@@ -102,8 +102,6 @@ public class Graph {
 			
 			//gets the value in position i in permanent path and find the corresponding item in product name
 			for(i = 1; i < numVertices; i++) {
-				
-				System.out.print(productName.get(perPath.get(i).intValue() - 1) + ", "); //Delete this code
 				tempWaypointName.add(waypointName.get(perPath.get(i).intValue() - 1));
 				tempProductName.add(productName.get(perPath.get(i).intValue() - 1));
 			}
@@ -111,8 +109,6 @@ public class Graph {
 			tempProductName.add(productName.get(perPath.get(i).intValue() - 1));
 			tempWaypointName.add(waypointName.get(waypointName.size() - 1));
 			tempProductName.add(productName.get(productName.size() - 1));
-			System.out.print(productName.get(perPath.get(i).intValue() - 1) + ", ");//Delete this code
-			System.out.println("Cashier> ]"); // To cash register //Delete this code
 		}
 		return new Pair<ArrayList<String>,ArrayList<String>>(tempWaypointName, tempProductName);
 	}
@@ -201,7 +197,7 @@ public class Graph {
 				waypointName = new ArrayList<String>();
 				waypointCoords = new ArrayList<Point2D>();
 				
-
+				// Get product name, waypoint name, and coordinates
 				for(int i = 0; i < products.size(); ++i) {
 					ResultSet waypoint = statement.executeQuery("select productName, waypoint from Product join Category on (Product.productName = " + "'" + products.get(i) + "') and (Product.categoryID = Category.categoryID) and (Category.storeID = " + String.valueOf(storeID) + ")");
 					waypoint.next(); //Make sure to point at the correct item
@@ -214,7 +210,7 @@ public class Graph {
 		            waypointCoords.add(new Point2D.Double(coord.getDouble(2), coord.getDouble(3)));			
 				}
 				
-				//Getting entrance
+				//Getting entrance from correct store
 				ResultSet beginAndEnd = null;
 				switch(storeID) {
 					case 1:
@@ -232,6 +228,7 @@ public class Graph {
 						
 				}
 				
+				//Add entrance in front of list
 				beginAndEnd.next();
 				productName.add(0, "Entrance");
 				waypointName.add(0, beginAndEnd.getString(1));
@@ -243,6 +240,6 @@ public class Graph {
 				waypointName.add(beginAndEnd.getString(1));
 				
 				connection.close();
-				addAllWeight();
+				addAllWeight(); //Initialize adjMatrix
 	}
 }
